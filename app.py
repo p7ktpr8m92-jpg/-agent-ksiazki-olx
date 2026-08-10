@@ -233,10 +233,3 @@ st.info(
     "Następny etap: automatyczne przekazywanie danych do OLX "
     "po uzyskaniu dostępu do oficjalnego API."
 )
-
-    st.caption(
-        "OLX otworzy formularz nowego ogłoszenia. "
-        "Skopiuj przygotowany wyżej tytuł, opis i cenę."
-    )
-
-    st.info("Następny moduł: oficjalne połączenie z OLX, jeśli konto/aplikacja otrzyma dostęp do Partner API. Nie obchodzimy zabezpieczeń OLX.")
