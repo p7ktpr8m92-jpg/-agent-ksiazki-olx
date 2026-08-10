@@ -198,14 +198,19 @@ if "listing" in st.session_state:
         mime="application/json",
         use_container_width=True,
     )
-        st.divider()
-        st.subheader("🟠 Gotowe do wystawienia")
+    st.divider()
+    st.subheader("🟠 Gotowe do wystawienia")
 
-        st.link_button(
-            "🟠 Wystaw na OLX",
-            "https://www.olx.pl/d/nowe-ogloszenie/",
-            use_container_width=True
-        )
+    st.link_button(
+        "🟠 Wystaw na OLX",
+        "https://www.olx.pl/d/nowe-ogloszenie/",
+        use_container_width=True
+    )
+
+    st.caption(
+        "OLX otworzy formularz nowego ogłoszenia. "
+        "Skopiuj przygotowany wyżej tytuł, opis i cenę."
+    )
 
         st.caption(
             "OLX otworzy formularz nowego ogłoszenia. "
