@@ -199,37 +199,37 @@ if "listing" in st.session_state:
         use_container_width=True,
     )
     st.divider()
-st.subheader("🟠 Gotowe do wystawienia")
+    st.subheader("🟠 Gotowe do wystawienia")
 
-title = d.get("title", "")
-description = d.get("description", "")
-price = d.get("suggested_price_pln", "")
+    title = d.get("title", "")
+    description = d.get("description", "")
+    price = d.get("suggested_price_pln", "")
 
-st.markdown("### Tytuł")
-st.code(title, language=None)
+    st.markdown("### Tytuł")
+    st.code(title, language=None)
 
-st.markdown("### Cena")
-st.code(f"{price} zł", language=None)
+    st.markdown("### Cena")
+    st.code(f"{price} zł", language=None)
 
-st.markdown("### Opis")
-st.text_area(
+    st.markdown("### Opis")
+    st.text_area(
     "Gotowy opis do OLX",
     description,
     height=250
-)
+    )
 
-st.link_button(
-    "🟠 Otwórz formularz OLX",
-    "https://www.olx.pl/d/nowe-ogloszenie/",
-    use_container_width=True
-)
+    st.link_button(
+        "🟠 Otwórz formularz OLX",
+        "https://www.olx.pl/d/nowe-ogloszenie/",
+        use_container_width=True
+    )
 
-st.caption(
-    "Skopiuj przygotowany tytuł, cenę i opis, "
-    "a następnie wklej je do formularza OLX."
-)
+    st.caption(
+        "Skopiuj przygotowany tytuł, cenę i opis, "
+        "a następnie wklej je do formularza OLX."
+    )
 
-st.info(
-    "Następny etap: automatyczne przekazywanie danych do OLX "
-    "po uzyskaniu dostępu do oficjalnego API."
-)
+    st.info(
+        "Następny etap: automatyczne przekazywanie danych do OLX "
+        "po uzyskaniu dostępu do oficjalnego API."
+    )
